@@ -1,0 +1,47 @@
+{
+    "Version": 1,
+    "UUID": "f0c4b045-6d6a-11e8-9f77-180373cce105",
+    "Name": "HelloWorld",
+    "Properties": {
+        "description": "provides an application template",
+        "language": "en"
+    },
+    "PropertiesSchemaFile": "properties_schema.json",
+    
+    "RequiresVersion": 26,
+    "DHTConfig": {
+        "HashType": "sha2-256",
+        "RedundancyFactor": 0
+    },       
+    "Zomes": [
+        {
+            "Name": "readerWriter",
+            "Description": "read and Write Data",
+            "CodeFile": "readerWriter.js",
+            "RibosomeType": "js",
+            "BridgeFuncs": null,
+            "Config": null,
+            "Entries": [
+                {
+                    "Name": "holoText",
+                    "DataFormat": "string",
+                    
+                    "Sharing": "private"
+                }
+            ],
+            "Functions": [
+                {
+                    "Name": "holoTextWrite",
+                    "CallingType": "string"
+                    
+                },
+                {
+                    "Name": "holoTextRead",
+                    "CallingType": "string"
+                    
+                }
+                
+            ]
+        }
+    ]
+}

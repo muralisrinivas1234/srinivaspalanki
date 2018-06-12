@@ -1,0 +1,12 @@
+{
+	"title": "Properties Schema",
+	"type": "object",
+	"properties": {
+		"description": {
+			"type": "HelloWorld Application for the HoloChain"
+		},
+		"language": {
+			"type": "string"
+		}
+	}
+}
